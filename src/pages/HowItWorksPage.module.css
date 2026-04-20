@@ -1,0 +1,176 @@
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 80px 24px 120px;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 72px;
+  letter-spacing: 2px;
+  margin: 0;
+  line-height: 1.1;
+}
+
+.subtitle {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 16px;
+  color: var(--text-secondary);
+  margin-top: 16px;
+}
+
+.stepsSection {
+  margin-bottom: 100px;
+}
+
+.stepCard {
+  width: 100%;
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 40px 48px;
+  margin-bottom: 16px;
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.stepNumber {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 120px;
+  line-height: 1;
+  color: var(--accent-fire);
+  opacity: 0.2;
+  position: relative;
+  min-width: 100px;
+}
+
+.stepContent {
+  flex: 1;
+}
+
+.stepLabel {
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 4px;
+  color: var(--accent-fire);
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.stepTitle {
+  font-family: 'Space Mono', monospace;
+  font-size: 28px;
+  color: var(--text-primary);
+  margin: 0 0 16px 0;
+}
+
+.stepDescription {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin: 0 0 24px 0;
+}
+
+.pills {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.pill {
+  background-color: var(--bg-tertiary);
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  padding: 3px 10px;
+  border-radius: 2px;
+  text-transform: uppercase;
+}
+
+.faqSection {
+  margin-bottom: 100px;
+}
+
+.faqHeader {
+  font-family: 'Space Mono', monospace;
+  font-size: 24px;
+  color: var(--text-primary);
+  text-transform: uppercase;
+  margin-bottom: 32px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.faqItem {
+  margin-bottom: 24px;
+}
+
+.faqQuestion {
+  font-family: 'Space Mono', monospace;
+  font-size: 16px;
+  color: var(--text-primary);
+  margin: 0 0 8px 0;
+}
+
+.faqAnswer {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.cta {
+  text-align: center;
+  padding-top: 40px;
+}
+
+.ctaTitle {
+  font-family: 'Space Mono', monospace;
+  font-size: 24px;
+  color: var(--text-primary);
+  margin-bottom: 32px;
+}
+
+.ctaBtn {
+  background: linear-gradient(135deg, var(--accent-fire), var(--accent-ember));
+  border: none;
+  padding: 16px 40px;
+  color: #000;
+  font-family: 'Space Mono', monospace;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  text-decoration: none;
+  display: inline-block;
+  transition: opacity 0.2s, box-shadow 0.2s;
+}
+
+.ctaBtn:hover {
+  opacity: 0.9;
+  box-shadow: 0 0 15px rgba(255, 69, 0, 0.4);
+}
+
+@media (max-width: 768px) {
+  .stepCard {
+    flex-direction: column;
+    gap: 20px;
+    padding: 32px 24px;
+  }
+  
+  .stepNumber {
+    font-size: 80px;
+  }
+}

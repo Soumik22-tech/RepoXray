@@ -1,0 +1,77 @@
+.container {
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.titleWrapper {
+  margin-bottom: 24px;
+}
+
+.roastTitle {
+  font-family: 'Space Mono', monospace;
+  font-size: 13px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+
+.scoreRow {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+
+.scoreNumber {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 200px;
+  line-height: 1;
+  animation: scoreGlow 2.5s ease-in-out infinite;
+}
+
+@keyframes scoreGlow {
+  0%, 100% { filter: drop-shadow(0 0 8px currentColor); }
+  50%       { filter: drop-shadow(0 0 24px currentColor)
+                      drop-shadow(0 0 48px currentColor); }
+}
+
+.scoreLabel {
+  font-family: 'Space Mono', monospace;
+  font-size: 24px;
+  color: var(--text-secondary);
+}
+
+.tagline {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 16px;
+  color: var(--text-secondary);
+  font-style: italic;
+  margin-top: 8px;
+  margin-bottom: 40px;
+}
+
+.barWrapper {
+  width: 100%;
+  max-width: 600px;
+  height: 6px;
+  background-color: var(--bg-tertiary);
+  border-radius: 3px;
+  overflow: hidden;
+  margin-bottom: 80px;
+}
+
+.barFill {
+  height: 100%;
+  border-radius: 3px;
+}
+
+@media (max-width: 768px) {
+  .scoreNumber {
+    font-size: 120px;
+  }
+}

@@ -1,0 +1,195 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 24px;
+}
+
+.topProgressBarWrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: transparent;
+  z-index: 1000;
+}
+
+.topProgressBar {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent-fire), var(--accent-ember), var(--accent-gold));
+  transition: width 0.5s ease-out;
+  position: relative;
+}
+
+.progressGlow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 20px;
+  box-shadow: 0 0 10px var(--accent-ember), 0 0 5px var(--accent-fire);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+.iconWrapper {
+  margin-bottom: 24px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.svgIcon {
+  width: 48px;
+  height: 48px;
+  color: var(--text-primary);
+}
+
+.textIcon {
+  font-size: 48px;
+}
+
+.fireIcon {
+  font-size: 48px;
+}
+
+.messageWrapper {
+  height: 44px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainMessage {
+  font-family: 'Space Mono', monospace;
+  font-size: 20px;
+  color: var(--text-primary);
+}
+
+.subMessage {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-bottom: 40px;
+}
+
+.terminalPanel {
+  width: 100%;
+  height: 180px;
+  background-color: #0b0b0b;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 16px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  overflow-y: auto;
+}
+
+.logLine {
+  display: flex;
+  justify-content: flex-start;
+  white-space: pre;
+}
+
+.logText {
+  color: var(--text-secondary);
+  display: inline-block;
+  min-width: 280px;
+}
+
+.logOk {
+  color: var(--accent-green);
+}
+
+.logProcessing {
+  color: var(--accent-ember);
+  animation: blink 1s infinite alternate;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  100% { opacity: 0.4; }
+}
+
+.waitingUI {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.amberGlow {
+  color: var(--accent-ember);
+  filter: drop-shadow(0 0 10px rgba(255, 107, 0, 0.4));
+  margin-bottom: 8px;
+}
+
+.waitingTitle {
+  font-family: 'Space Mono', monospace;
+  font-size: 20px;
+  color: var(--accent-ember);
+}
+
+.waitingSub {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.countdownNumber {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 120px;
+  line-height: 1;
+  color: var(--accent-gold);
+  animation: amberPulse 2s ease-in-out infinite;
+}
+
+.countdownUnit {
+  font-family: 'Space Mono', monospace;
+  font-size: 16px;
+  color: var(--text-muted);
+  margin-top: -10px;
+}
+
+.retryAttempt {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 10px;
+}
+
+.reassurance {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 13px;
+  color: var(--text-secondary);
+  font-style: italic;
+  margin-top: 20px;
+}
+
+@keyframes amberPulse {
+  0%, 100% { filter: drop-shadow(0 0 4px var(--accent-gold)); }
+  50% { filter: drop-shadow(0 0 16px var(--accent-gold)); }
+}
+
+@media (max-width: 480px) {
+  .logText {
+    min-width: 200px;
+    font-size: 11px;
+  }
+}

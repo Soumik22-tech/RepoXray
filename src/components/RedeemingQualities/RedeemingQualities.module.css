@@ -1,0 +1,42 @@
+.section {
+  padding-bottom: 80px;
+}
+
+.headerTitle {
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  color: var(--accent-green);
+  margin-bottom: 40px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card {
+  background-color: rgba(0, 255, 136, 0.03);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent-green);
+  border-radius: 4px;
+  padding: 24px;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.emoji {
+  color: var(--accent-green); /* While emojis have fixed colors, some engines respect drop-shadows or color props for font variants */
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.text {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 15px;
+  color: var(--text-primary);
+  line-height: 1.7;
+}

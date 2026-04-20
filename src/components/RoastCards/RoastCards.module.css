@@ -1,0 +1,86 @@
+.section {
+  padding-bottom: 80px;
+}
+
+.headerTitle {
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  margin-bottom: 40px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.card {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border);
+  padding: 24px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  position: relative;
+  overflow: hidden;
+  border-left: 4px solid var(--severity-color);
+}
+
+.sweepLine {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1px;
+  width: 0%;
+  opacity: 0.6;
+  animation: sweepLineAnim 0.4s ease-out forwards;
+}
+
+@keyframes sweepLineAnim {
+  0% { width: 0%; opacity: 0.6; }
+  90% { width: 100%; opacity: 0.6; }
+  100% { width: 100%; opacity: 0; }
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.severityBadge {
+  font-family: 'Space Mono', monospace;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 4px 8px;
+  border: 1px solid;
+  border-radius: 2px;
+}
+
+.filePath {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.roastCategory {
+  font-family: 'Space Mono', monospace;
+  font-size: 16px;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.roastBurn {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin: 0;
+}

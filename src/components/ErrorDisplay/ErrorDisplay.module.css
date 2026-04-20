@@ -1,0 +1,142 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 80px 24px;
+}
+
+.icon {
+  width: 64px;
+  height: 64px;
+  color: #ff2d55;
+  margin-bottom: 24px;
+}
+
+.title {
+  font-family: 'Space Mono', monospace;
+  font-size: 28px;
+  color: var(--accent-red);
+  margin-bottom: 16px;
+}
+
+.message {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
+
+.tips {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: left;
+  background-color: var(--bg-secondary);
+  padding: 24px;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.tipItem {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
+  color: var(--text-muted);
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.arrow {
+  color: var(--accent-fire);
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.primaryBtn {
+  background: linear-gradient(135deg, var(--accent-fire), var(--accent-ember));
+  color: #000;
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 14px 40px;
+  border: none;
+  border-radius: 4px;
+  width: 100%;
+  cursor: pointer;
+  transition: opacity 0.2s, box-shadow 0.2s;
+}
+
+.primaryBtn:hover {
+  opacity: 0.9;
+  box-shadow: var(--glow-fire);
+}
+
+.ghostBtn {
+  background: transparent;
+  color: var(--text-secondary);
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 14px 40px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  width: 100%;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.ghostBtn:hover {
+  color: var(--text-primary);
+  border-color: var(--text-secondary);
+}
+
+.countdownText {
+  font-family: 'Space Mono', monospace;
+  font-size: 14px;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 40px;
+  width: 100%;
+}
+
+.readyPulse {
+  animation: pulseReady 1.5s infinite;
+}
+
+@keyframes pulseReady {
+  0% { box-shadow: 0 0 0 0 rgba(255, 107, 0, 0.7); }
+  70% { box-shadow: 0 0 0 10px rgba(255, 107, 0, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(255, 107, 0, 0); }
+}
+
+@media (min-width: 480px) {
+  .actions {
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .primaryBtn, .ghostBtn {
+    width: auto;
+    min-width: 200px;
+  }
+}
