@@ -23,12 +23,17 @@ html {
   font-size: 16px;
 }
 
+html, body {
+  overflow-x: hidden;
+  scrollbar-gutter: stable;
+}
+
+
 body {
   background-color: var(--bg-primary);
   color: var(--text-primary);
   font-family: 'IBM Plex Mono', monospace;
   min-height: 100vh;
-  overflow-x: hidden;
 }
 
 /* Noise texture overlay on body */
@@ -42,10 +47,29 @@ body::before {
   z-index: 0;
 }
 
-/* Custom scrollbar */
-::-webkit-scrollbar { width: 6px; }
-::-webkit-scrollbar-track { background: var(--bg-primary); }
-::-webkit-scrollbar-thumb { background: var(--accent-fire); border-radius: 3px; }
+/* Hide scrollbars for nested scroll containers */
+* {
+  scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+/* Keep scrollbar visible on body only */
+body::-webkit-scrollbar {
+  display: block;
+  width: 6px;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--accent-fire);
+  border-radius: 3px;
+}
 
 /* Fire gradient text utility */
 .gradient-text {
