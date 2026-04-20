@@ -15,23 +15,23 @@
 
 | 01 — Landing Page |
 | :---: |
-| <img width="1919" height="910" alt="Screenshot 2026-04-20 133156" src="https://github.com/user-attachments/assets/8c88697b-f72e-493e-92a5-f4e480fd2149" />|
+| <img width="1919" height="910" alt="Screenshot 2026-04-20 133156" src="https://github.com/user-attachments/assets/3d270fea-6e3d-4b3f-bd41-379a8234d6c8" />|
 
 | 02 — Analysis Pipeline  |
 | :---: |
-| <img width="1919" height="863" alt="image" src="https://github.com/user-attachments/assets/e8432031-ac6e-4ac0-beb4-7407e44cfcff" />|
+| <img width="1919" height="863" alt="Screenshot 2026-04-20 145347" src="https://github.com/user-attachments/assets/2c794190-a90d-4343-8984-bde5dbc10dd1" />|
 
 | 03 — Score |
 | :---: |
-| <img width="1919" height="914" alt="Screenshot 2026-04-20 132921" src="https://github.com/user-attachments/assets/62ee48b6-edfa-4b57-b918-df3ad8235f0b" />|
+| <img width="1919" height="914" alt="Screenshot 2026-04-20 132921" src="https://github.com/user-attachments/assets/a05c9747-f72c-4c9b-9b0a-9357b70e6c2a" />|
 
 | 04 — The Verdict |
 | :---: |
-| <img width="1919" height="903" alt="Screenshot 2026-04-20 132946" src="https://github.com/user-attachments/assets/8b419922-7360-4b80-8ad0-6a4754d5e23d" />|
+| <img width="1919" height="903" alt="Screenshot 2026-04-20 132946" src="https://github.com/user-attachments/assets/39020796-16e7-4f02-bf8e-b05dfa0ad6a3" />|
 
 | 05 — Detailed Roasts |
 | :---: |
-| <img width="1919" height="911" alt="Screenshot 2026-04-20 133002" src="https://github.com/user-attachments/assets/37a3e5c8-0d17-4493-a6ba-4dfa66e7851e" />|
+| <img width="1919" height="911" alt="Screenshot 2026-04-20 133002" src="https://github.com/user-attachments/assets/73b29d39-75be-4979-8410-4065d4193d12" />|
 
 ---
 
